@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --twitter-blue: #1da1f2;
+}
+
+body{
+    background: #121214;
+    color: #e1e1e6;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button{
+    font: 400 1rem Roboto, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+}
+
+/* Page: TimeLine */
+
+.layout{
+    margin: 0 auto;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.sidebar{
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Logo do twitter */
+.sidebar .logo{
+    width: 2rem;
+    height: 2rem;
+
+}
+
+/* Botão de "novo Tweet" */
+.sidebar .newTweet{
+    background: var(--twitter-blue);
+    border-radius: 9999px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 900;
+    border: 0;
+}
+
+/* Hover diminui o brilho do botão */
+.sidebar .newTweet:hover{
+    filter: brightness(0.9);
+}
+
+/* Navegação do Sidebar */
+.mainNavigation{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Itens da Sidebar */
+.mainNavigation a{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mainNavigation a svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.mainNavigation a.active{
+    color: var(--twitter-blue);
+}
+
+/* Conteúdo principal */
+.content{
+    border-left: 1px solid #2F2F2F;
+    border-right: 1px solid #2F2F2F;
+}  
+
+/* Header da timeline */
+.timeLineHeader{
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-bottom: 1px solid #2F2F2F;
+}
+
+/* SVG do header timeline */
+.timeLineHeader svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--twitter-blue);
+}
+
+/* Campo de novo Tweet */
+.newTweetForm{
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* label do campo de novo tweet */
+.newTweetForm label{
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* Ícone de perfil do campo de novo tweet */
+.newTweetForm label img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+/* Textarea do campo novo tweet */
+.newTweetForm label textarea{
+    flex: 1;
+    border: 0;
+    font-size:  1.25rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    resize: none;
+    background: #121214;
+}
+
+/* Retira a linha ao selecionar o textarea */
+.newTweetForm label textarea:focus{
+    outline: none;
+}
+
+/* estiliza a font do placeholder do textarea */
+.newTweetForm label textarea::placeholder{
+    color: #5b7083;
+}
+
+/* estilização do botão de novo tweet */
+.newTweetForm button[type=submit]{
+    margin-left: auto;
+    background: var(--twitter-blue);
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 0;
+}
+
+/* Hover do botão de novo tweet */
+.newTweetForm button[type=submit]:hover{
+    filter: brightness(0.9);
+}
+
+/* Separador dos tweets */
+.separator{
+    background: #202020;
+    border-top: 1px solid #2F2F2F;
+    border-bottom: 1px solid #2F2F2F;
+    height: 0.75rem;
+}
