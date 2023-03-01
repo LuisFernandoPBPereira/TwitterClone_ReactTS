@@ -59,3 +59,28 @@
 .answerTweetForm button[type=submit]:hover{
     filter: brightness(0.9);
 }
+
+.answerTweetForm button[type=submit] svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
+@media (max-width: 780px){
+
+    .answerTweetForm label textarea{
+        font-size: 1rem;
+    }
+
+    .answerTweetForm button[type=submit]{
+        padding: 0.75rem;
+    }
+
+    .answerTweetForm button[type=submit] svg{
+        display: block;
+    }
+
+    .answerTweetForm button[type=submit] span{
+        display: none;
+    }
+}

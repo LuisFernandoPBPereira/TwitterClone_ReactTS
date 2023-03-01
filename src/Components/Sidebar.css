@@ -25,6 +25,12 @@
     border: 0;
 }
 
+.sidebar .newTweet svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
 /* Hover diminui o brilho do botão */
 .sidebar .newTweet:hover{
     filter: brightness(0.9);
@@ -54,4 +60,23 @@
 
 .mainNavigation a.active{
     color: var(--twitter-blue);
+}
+
+@media (max-width: 780px){
+    .sidebar{
+        padding: 1.5rem 0.75rem;
+        align-items: center;
+    }
+
+    .mainNavigation a span{
+        display: none;
+    }
+
+    .sidebar .newTweet span{
+        display: none;
+    }
+
+    .sidebar .newTweet svg{
+        display: block;
+    }
 }
