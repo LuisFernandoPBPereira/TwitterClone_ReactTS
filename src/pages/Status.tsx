@@ -21,8 +21,8 @@ export function Status(){
     //o React monitora os estados e reage conforme suas mudanças
     const [newAnswer, setNewAnswer] = useState("")
     const [answers, setAnswers] = useState([
-        "Concordo",
-        "Olha, faz sentido",
+        "Bão demais",
+        "Coisa boa",
         "hehehehe"
     ])
     function createNewTweet(event: FormEvent){
@@ -47,7 +47,7 @@ export function Status(){
         <main className='status'>
           <Header title='Tweet'/>
           
-          <Tweet content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, incidunt est rem qui ex necessitatibus vitae vero quaerat nostrum officia iste aut dolorum, expedita in perspiciatis repudiandae quae repellat illum?"/>
+          <Tweet content="Esse é o clone do Twitter que fiz, ainda tem muita coisa para fazer, mas é um bom começo, não é?"/>
           <Separator/>
           <form onSubmit={createNewTweet} className="answerTweetForm">
             <label htmlFor="tweet">

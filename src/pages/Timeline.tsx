@@ -8,7 +8,10 @@ import "./Timeline.css"
 export function Timeline(){
     //o React monitora os estados e reage conforme suas mudanças
     const [newTweet, setNewTweet] = useState("")
-    const [tweets, setTweets] = useState(["Fala meu parceiro"])
+    const [tweets, setTweets] = useState([
+        "Hoje eu fiz meu primeiro delete sem 'where', será que vou de comes e bebes?",
+        "Fui me candidatar numa vaga de estágio, e ela pedia 3 anos de experiência, como que tanka?"
+    ])
     function createNewTweet(event: FormEvent){
         event.preventDefault()
         
