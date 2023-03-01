@@ -1,3 +1,4 @@
+/* Estrutura do bloco do tweet */
 .tweet{
     padding: 1.5rem 1.25rem;
     display: grid;
@@ -6,3 +7,61 @@
     border-bottom: 1px solid #2F2F2F;
     text-decoration: none;
 }
+/* Ícone de perfil do tweet */
+.tweet img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+/* Conteúdo do tweet */
+.tweet .tweetContent{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Cabeçalho do tweet (Nome e @) */
+.tweet .tweetContent .tweetContentHeader{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+/* Estilização do @ */
+.tweet .tweetContent .tweetContentHeader span{
+    font-size: 0.875rem;
+    color: #828282;
+}
+
+/* Espaçamento do texto do tweet */
+.tweet .tweetContent p{
+    line-height: 1.25;
+}
+
+/* Footer do tweet */
+.tweet .tweetContent .tweetContentFooter{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 0.75rem;
+}
+/* Botões do tweet */
+.tweet .tweetContent .tweetContentFooter button{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: 0;
+    color: #828282;
+    font-size: 0.875rem;
+}
+/* Hover dos botões do tweet */
+.tweet .tweetContent .tweetContentFooter button:hover{
+    color: var(--twitter-blue);
+}
+/* Ícones dos botões */
+.tweet .tweetContent .tweetContentFooter button svg{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+

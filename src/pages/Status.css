@@ -1,0 +1,61 @@
+/* Campo de novo Tweet */
+.answerTweetForm{
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #2F2F2F;
+}
+
+/* label do campo de novo tweet */
+.answerTweetForm label{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Ícone de perfil do campo de novo tweet */
+.answerTweetForm label img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+/* Textarea do campo novo tweet */
+.answerTweetForm label textarea{
+    flex: 1;
+    border: 0;
+    font-size:  1.25rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    resize: none;
+    background: #121214;
+    color: white;
+}
+
+/* Retira a linha ao selecionar o textarea */
+.answerTweetForm label textarea:focus{
+    outline: none;
+}
+
+/* estiliza a font do placeholder do textarea */
+.answerTweetForm label textarea::placeholder{
+    color: #5b7083;
+}
+
+/* estilização do botão de novo tweet */
+.answerTweetForm button[type=submit]{
+    margin-left: auto;
+    background: var(--twitter-blue);
+    border-radius: 9999px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 0;
+}
+
+/* Hover do botão de novo tweet */
+.answerTweetForm button[type=submit]:hover{
+    filter: brightness(0.9);
+}

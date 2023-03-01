@@ -1,0 +1,57 @@
+.sidebar{
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Logo do twitter */
+.sidebar .logo{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Botão de "novo Tweet" */
+.sidebar .newTweet{
+    background: var(--twitter-blue);
+    border-radius: 9999px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 900;
+    border: 0;
+}
+
+/* Hover diminui o brilho do botão */
+.sidebar .newTweet:hover{
+    filter: brightness(0.9);
+}
+
+/* Navegação do Sidebar */
+.mainNavigation{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Itens da Sidebar */
+.mainNavigation a{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.mainNavigation a svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.mainNavigation a.active{
+    color: var(--twitter-blue);
+}
